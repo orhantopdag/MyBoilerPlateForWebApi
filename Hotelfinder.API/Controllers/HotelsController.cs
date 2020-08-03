@@ -67,7 +67,8 @@ namespace Hotelfinder.API.Controllers
         {
            
                 var createdHotel =await _hotelService.CreateHotel(hotel);
-                return CreatedAtAction("Get", new { id = createdHotel.Id },createdHotel);         
+                return CreatedAtAction("Get", new { id = createdHotel.Id },createdHotel);    
+            
         }
 
         [HttpPut]
